@@ -1,24 +1,22 @@
 public class Billete {
-    private int tipoMagnetico;
     private String nombre;
     private String tipo;
     private String papel;
-    private int valor;
+    private double precio;
 
-    public Billete(int tipoMagnetico, String nombre, String tipo, String papel, int valor) {
-        this.tipoMagnetico = tipoMagnetico;
+    public Billete(int tipoMagnetico, String nombre, String tipo, String papel, double precio) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.papel = papel;
-        this.valor = valor;
+        this.precio = precio;
     }
 
     public String getTipo() {
         return tipo;
     }
 
-    public int getValor() {
-        return valor;
+    public double getPrecio() {
+        return precio;
     }
 
     public String getPapel() {
@@ -27,14 +25,6 @@ public class Billete {
 
     public String getNombre() {
         return nombre;
-    }
-
-    public int getTipoMagnetico() {
-        return tipoMagnetico;
-    }
-
-    public void setTipoMagnetico(int tipoMagnetico) {
-        this.tipoMagnetico = tipoMagnetico;
     }
 
     public void setTipo(String tipo) {
@@ -47,7 +37,11 @@ public class Billete {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public String toString() {
+        return "Billete [nombre=" + nombre + ", tipo=" + tipo + ", papel=" + papel + ", precio=" + precio + "]";
     }
 }

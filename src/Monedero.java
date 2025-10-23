@@ -4,15 +4,11 @@ public class Monedero {
         return true;
     }
 
-    public void suministrar(int u){
-        System.out.println("Suministrando " + u + "noseque");
-    }
+    public void suministrar(int cantidad){}
 
-    public int devolverCantidadIntroducida(){
-        return;
-    }
-    
-    public int cantidadIntroducida(){
+    public void devolverCantidadIntroducida(){}
 
+    public int cantidadIntroducida(){ 
+        return 0;
     }
 }
